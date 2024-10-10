@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="validation.js" defer></script>
+    <style>
+        .error { color: red; }
+        .invalid { color: orange; }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required placeholder="(123)-456-7890">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br>
+
+        <label for="age">Age Group:</label>
+        <select id="age" name="age">
+            <option value="">Select age group</option>
+            <option value="<21">&lt; 21 years old</option>
+            <option value="21-25">21 – 25 years old</option>
+            <option value="26-35">26 – 35 years old</option>
+            <option value="36-50">36 – 50 years old</option>
+            <option value="50+">50 years old</option>
+        </select>
+        <br>
+
+        <label>Music Genre:</label>
+        <input type="checkbox" name="music" value="Pop"> Pop
+        <input type="checkbox" name="music" value="Hip-hop"> Hip-hop
+        <input type="checkbox" name="music" value="Jazz"> Jazz
+        <input type="checkbox" name="music" value="Rock"> Rock
+        <input type="checkbox" name="music" value="Classical"> Classical
+        <input type="checkbox" name="music" value="Country"> Country
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
